@@ -1,13 +1,15 @@
 <script>
-import ShopButton from './ShopButton.vue';
-
 export default {
     data() {
         return {
+            buttons: [
+                "digital comics",
+                "dc merchandise",
+                "subscription",
+                "comic shop locator",
+                "dc power visa"
+            ]
         }
-    },
-    components: {
-        ShopButton
     }
 }
 </script>
@@ -15,11 +17,10 @@ export default {
 <template>
     <div id="main-bottom">
         <div class="container">
-            <ShopButton></ShopButton>
-            <ShopButton></ShopButton>
-            <ShopButton></ShopButton>
-            <ShopButton></ShopButton>
-            <ShopButton></ShopButton>
+            <div v-for="button in buttons" class="button">
+                <div class="image"></div>
+                <div class="text">{{ button }}</div>
+            </div>
         </div>
     </div>
 </template>
@@ -34,5 +35,19 @@ export default {
     display: flex;
     justify-content: center;
     height: 155px;
+}
+
+.button {
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    margin: 0 20px;
+}
+
+.image {
+    aspect-ratio: 1;
+    background-color: #ffffff;
+    margin-right: 10px;
+    width: 50px;
 }
 </style>
