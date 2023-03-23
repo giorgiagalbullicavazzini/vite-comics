@@ -1,13 +1,20 @@
 <script>
-import NavbarItems from './NavbarItems.vue';
-
 export default {
     data() {
         return {
+            navbar: [
+                "characters",
+                "comics",
+                "movies",
+                "tv",
+                "games",
+                "collectibles",
+                "videos",
+                "fans",
+                "news",
+                "shop"
+            ]
         }
-    },
-    components: {
-        NavbarItems
     }
 }
 </script>
@@ -15,11 +22,7 @@ export default {
 <template>
     <div id="navbar">
         <ul>
-            <NavbarItems></NavbarItems>
-            <NavbarItems></NavbarItems>
-            <NavbarItems></NavbarItems>
-            <NavbarItems></NavbarItems>
-            <NavbarItems></NavbarItems>
+            <li v-for="item in navbar"><a href="#">{{ item }}</a></li>
         </ul>
     </div>
 </template>
@@ -28,5 +31,9 @@ export default {
 ul {
     display: flex;
     list-style: none;
+}
+
+li {
+    margin-left: 20px;
 }
 </style>
