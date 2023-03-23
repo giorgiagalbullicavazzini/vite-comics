@@ -9,7 +9,9 @@ export default {
 
 <template>
     <div id="main-top">
-        <div class="container"></div>
+        <div class="container">
+            --&gt; Content goes here &lt;--
+        </div>
     </div>
 </template>
 
@@ -19,6 +21,9 @@ export default {
 }
 
 .container {
+    align-items: center;
+    color: #ffffff;
+    display: flex;
     height: 130px;
 }
 </style>
