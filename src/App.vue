@@ -1,8 +1,8 @@
 <script>
 // Import all components
-import DCFooter from './components/DCFooter.vue';
-import DCHeader from './components/DCHeader.vue';
-import DCMain from './components/DCMain.vue';
+import DCFooter from './components/footer/DCFooter.vue';
+import DCHeader from './components/header/DCHeader.vue';
+import DCMain from './components/main/DCMain.vue';
 
 export default {
   components: {
