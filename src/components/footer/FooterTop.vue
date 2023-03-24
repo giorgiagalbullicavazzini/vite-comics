@@ -90,7 +90,6 @@ h3 {
 
 ul {
     color: #7c7e80;
-    list-style: none;
     margin: 10px 0;
 }
 </style>

@@ -30,7 +30,6 @@ export default {
 <style scoped>
 ul {
     display: flex;
-    list-style: none;
     text-transform: uppercase;
 }
 
