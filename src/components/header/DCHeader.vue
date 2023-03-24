@@ -31,10 +31,9 @@ header {
     background-color: variables.$main-color;
 
     .container {
-    align-items: center;
-    display: flex;
-    padding: 1.125rem 0;
-    justify-content: space-between;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
     }
 }
 </style>

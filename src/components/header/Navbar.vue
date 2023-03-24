@@ -4,16 +4,46 @@ export default {
     data() {
         return {
             navbar: [
-                'Characters',
-                'Comics',
-                'Movies',
-                'TV',
-                'Games',
-                'Collectibles',
-                'Videos',
-                'Fans',
-                'News',
-                'Shop'
+                {
+                    item: 'Characters',
+                    active: true,
+                },
+                {
+                    item: 'Comics',
+                    active: false,
+                },
+                {
+                    item: 'Movies',
+                    active: false,
+                },
+                {
+                    item: 'TV',
+                    active: false,
+                },
+                {
+                    item: 'Games',
+                    active: false,
+                },
+                {
+                    item: 'Collectibles',
+                    active: false,
+                },
+                {
+                    item: 'Videos',
+                    active: false,
+                },
+                {
+                    item: 'Fans',
+                    active: false,
+                },
+                {
+                    item: 'News',
+                    active: false,
+                },
+                {
+                    item: 'Shop',
+                    active: false,
+                }
             ]
         }
     }
@@ -23,7 +53,7 @@ export default {
 <template>
     <div id="navbar">
         <ul>
-            <li v-for="item in navbar"><a href="#">{{ item }}</a></li>
+            <li v-for="item in navbar"><a href="#" :class="{ active: item.active === true }">{{ item.item }}</a></li>
         </ul>
     </div>
 </template>
@@ -32,17 +62,23 @@ export default {
 @use '../../assets/styles/partials/variables';
 
 ul {
+    align-items: center;
     display: flex;
     text-transform: uppercase;
 
     li {
-        margin-left: 1.25rem;
+        margin-left: 1.875rem;
 
         a {
+            border-bottom: variables.$navbar-border solid transparent;
             color: variables.$darken-color;
+            display: inline-block;
+            font-weight: 600;
+            line-height: 7.5rem;
 
-            &.active {
-                border-bottom: 5px solid variables.$brand-color;
+            &.active,
+            &:hover {
+                border-bottom: variables.$navbar-border solid variables.$brand-color;
                 color: variables.$brand-color;
             }
         }
