@@ -6,11 +6,11 @@ export default {
             navbar: [
                 {
                     item: 'Characters',
-                    active: true,
+                    active: false,
                 },
                 {
                     item: 'Comics',
-                    active: false,
+                    active: true,
                 },
                 {
                     item: 'Movies',
