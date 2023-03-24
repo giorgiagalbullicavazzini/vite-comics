@@ -1,9 +1,11 @@
+// Import partials scss files
 @use './partials/mixins' as *;
 @use './partials/reset' as *;
 @use './partials/typography' as *;
 @use './partials/variables' as *;
 
+// General container
 .container {
     margin: auto;
-    max-width: 1300px;
+    max-width: 81.25rem;
 }

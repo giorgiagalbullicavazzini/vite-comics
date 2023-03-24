@@ -5,6 +5,7 @@ import DCHeader from './components/header/DCHeader.vue';
 import DCMain from './components/main/DCMain.vue';
 
 export default {
+  name: 'DCComics',
   components: {
     DCFooter,
     DCHeader,
@@ -15,14 +16,14 @@ export default {
 
 <template>
   <!-- Header -->
-  <DCHeader></DCHeader>
+  <DCHeader />
   <!-- // Header -->
 
   <!-- Main -->
-  <DCMain></DCMain>
+  <DCMain />
   <!-- // Main -->
 
   <!-- Footer -->
-  <DCFooter></DCFooter>
+  <DCFooter />
   <!-- // Footer -->
 </template>
