@@ -1,9 +1,6 @@
 <script>
 export default {
-    data() {
-        return {
-        }
-    }
+    name: 'Logo'
 }
 </script>
 

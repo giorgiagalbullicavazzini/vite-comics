@@ -16,23 +16,25 @@ export default {
 </script>
 
 <template>
-    <div id="header">
+    <header>
         <div class="container">
             <Logo></Logo>
             <Navbar></Navbar>
         </div>
-    </div>
+    </header>
 </template>
 
-<style scoped>
-#header {
-    background-color: #ffffff;
-}
+<style lang="scss" scoped>
+@use '../../assets/styles/partials/variables';
 
-.container {
+header {
+    background-color: variables.$main-color;
+
+    .container {
     align-items: center;
     display: flex;
-    height: 120px;
+    padding: 1.125rem 0;
     justify-content: space-between;
+    }
 }
 </style>
