@@ -3,16 +3,16 @@ export default {
     data() {
         return {
             navbar: [
-                "characters",
-                "comics",
-                "movies",
-                "tv",
-                "games",
-                "collectibles",
-                "videos",
-                "fans",
-                "news",
-                "shop"
+                "Characters",
+                "Comics",
+                "Movies",
+                "TV",
+                "Games",
+                "Collectibles",
+                "Videos",
+                "Fans",
+                "News",
+                "Shop"
             ]
         }
     }
@@ -31,6 +31,7 @@ export default {
 ul {
     display: flex;
     list-style: none;
+    text-transform: uppercase;
 }
 
 li {
