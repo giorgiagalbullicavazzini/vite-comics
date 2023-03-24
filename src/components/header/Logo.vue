@@ -9,14 +9,15 @@ export default {
 
 <template>
     <div id="logo">
-
+        <a href="#">
+            <img src="/img/dc-logo.png" alt="DC Comics Logo">
+        </a>
     </div>
 </template>
 
 <style scoped>
 #logo {
     aspect-ratio: 1;
-    background-color: #0c7cec;
-    width: 85px;
+    width: 5rem;
 }
 </style>
