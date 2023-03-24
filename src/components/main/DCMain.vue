@@ -3,10 +3,7 @@ import MainBottom from './MainBottom.vue';
 import MainTop from './MainTop.vue';
 
 export default {
-    data() {
-        return {
-        }
-    },
+    name: 'DCMain',
     components: {
         MainBottom,
         MainTop
@@ -15,8 +12,8 @@ export default {
 </script>
 
 <template>
-    <div id="main">
+    <main>
         <MainTop></MainTop>
         <MainBottom></MainBottom>
-    </div>
+    </main>
 </template>
