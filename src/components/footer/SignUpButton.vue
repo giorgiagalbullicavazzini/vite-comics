@@ -20,7 +20,6 @@ button {
     cursor: pointer;
     font-family: inherit;
     font-size: inherit;
-    font-weight: 600;
     padding: .625rem;
     text-transform: uppercase;
 }

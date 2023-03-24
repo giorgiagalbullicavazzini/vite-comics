@@ -94,6 +94,7 @@ export default {
                 margin: .625rem 0;
 
                 li {
+                    font-size: .875rem;
                     margin: .3125rem 0;
 
                     a {
