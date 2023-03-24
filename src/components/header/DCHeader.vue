@@ -1,11 +1,13 @@
 <script>
 // Import all components
+import Jumbotron from './Jumbotron.vue';
 import Logo from './Logo.vue';
 import Navbar from './Navbar.vue';
 
 export default {
     name: 'DCHeader',
     components: {
+        Jumbotron,
         Logo,
         Navbar
     }
@@ -17,6 +19,9 @@ export default {
         <div class="container">
             <Logo></Logo>
             <Navbar></Navbar>
+        </div>
+        <div class="jumbotron">
+            <Jumbotron></Jumbotron>
         </div>
     </header>
 </template>
