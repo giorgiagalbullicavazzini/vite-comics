@@ -3,10 +3,7 @@ import FooterBottom from './FooterBottom.vue';
 import FooterTop from './FooterTop.vue';
 
 export default {
-    data() {
-        return {
-        }
-    },
+    name: 'DCFooter',
     components: {
         FooterBottom,
         FooterTop
@@ -15,8 +12,8 @@ export default {
 </script>
 
 <template>
-    <div id="footer">
+    <footer>
         <FooterTop></FooterTop>
         <FooterBottom></FooterBottom>
-    </div>
+    </footer>
 </template>
