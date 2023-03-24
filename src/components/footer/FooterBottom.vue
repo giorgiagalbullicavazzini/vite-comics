@@ -3,10 +3,7 @@ import SignUpButton from './SignUpButton.vue';
 import Socials from './Socials.vue';
 
 export default {
-    data() {
-        return {
-        }
-    },
+    name: 'FooterBottom',
     components: {
         SignUpButton,
         Socials
@@ -23,15 +20,17 @@ export default {
     </div>
 </template>
 
-<style scoped>
-#footer-bottom {
-    background-color: #303030;
-}
+<style lang="scss" scoped>
+@use '../../assets/styles/partials/variables';
 
-.container {
-    align-items: center;
-    display: flex;
-    height: 110px;
-    justify-content: space-between;
+#footer-bottom {
+    background-color: variables.$dark-color;
+
+    .container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 2.5rem 0;
+    }
 }
 </style>

@@ -1,14 +1,27 @@
 <script>
 export default {
-    data() {
-        return {
-        }
-    }
+    name: 'SignUpButton',
 }
 </script>
 
 <template>
-    <button>Sign-up now!</button>
+    <a href="#">
+        <button>Sign-up now!</button>
+    </a>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+@use '../../assets/styles/partials/variables';
+
+button {
+    background-color: transparent;
+    border: .125rem solid variables.$brand-color;
+    color: variables.$main-color;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    padding: .625rem;
+    text-transform: uppercase;
+}
+</style>
