@@ -1,0 +1,9 @@
+@use './partials/mixins' as *;
+@use './partials/reset' as *;
+@use './partials/typography' as *;
+@use './partials/variables' as *;
+
+.container {
+    margin: auto;
+    max-width: 1300px;
+}
