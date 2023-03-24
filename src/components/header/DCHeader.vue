@@ -4,10 +4,7 @@ import Logo from './Logo.vue';
 import Navbar from './Navbar.vue';
 
 export default {
-    data() {
-        return {
-        }
-    },
+    name: 'DCHeader',
     components: {
         Logo,
         Navbar
